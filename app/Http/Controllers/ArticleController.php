@@ -13,12 +13,14 @@ class ArticleController extends Controller
     public function index()
     {
         // all articles without caching
-        //return Article::all();
+        //return Article::all();  // => it takes around 1.92 sec to load the 5000 data   
 
-        // all articles with caching
-         return cache()->remember('articles', 60, function () {
-             return Article::all();   
-            });
+        // all articles with caching   => it takes around 2 sec to  load the 5000 data than it will be cached for 60 sec
+        //  return cache()->remember('articles', 60, function () {
+        //      return Article::all();   
+        //     });
+
+        // more efficient way to cache the data
        
     }
 
