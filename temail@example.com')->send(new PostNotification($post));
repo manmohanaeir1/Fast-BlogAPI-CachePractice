@@ -1,0 +1,8 @@
+[90m= [39m[34;4mApp\Models\Post[39;24m {#5516
+    [34mid[39m: [35m1[39m,
+    [34mtitle[39m: "[32mSecond Post[39m",
+    [34mcontent[39m: "[32mThis is another sample post.[39m",
+    [34mcreated_at[39m: "[32m2025-01-26 13:43:13[39m",
+    [34mupdated_at[39m: "[32m2025-01-26 13:43:13[39m",
+  }
+
